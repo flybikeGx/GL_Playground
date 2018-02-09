@@ -5,12 +5,10 @@
 #include "glm/glm.hpp"
 
 #include "constant.h"
+#include "utils.h"
+
 
 using namespace std;
-
-void error_callback(int error, const char *description) {
-    cout << description << endl;
-}
 
 int main() {
 
@@ -43,13 +41,17 @@ int main() {
     }
 
     glEnable(GL_DEPTH_TEST);
+    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
     while (!glfwWindowShouldClose(window)) {
+
+        processInput(window);
+
+        glClear(GL_COLOR_BUFFER_BIT);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
 
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
