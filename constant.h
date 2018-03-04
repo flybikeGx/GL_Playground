@@ -5,7 +5,7 @@
 #ifndef OPENGL_INIT_CONSTANT_H
 #define OPENGL_INIT_CONSTANT_H
 
-const unsigned int SCR_WIDTH = 1366;
-const unsigned int SCR_HEIGHT = 768;
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
 
 #endif //OPENGL_INIT_CONSTANT_H
